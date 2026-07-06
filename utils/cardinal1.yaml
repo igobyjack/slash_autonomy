@@ -1,0 +1,19 @@
+# Configuration for Cardinal 1
+
+control:
+
+  # I2C bus the PCA9685 is on. Jetson Orin Nano (Super) 40-pin header
+  # (pins 3/5) defaults to bus 7; classic Nano used bus 1.
+  i2c_bus: 7
+
+  # servokit signal frequency
+  freq_hz: 100
+
+  # pulse width range
+  esc_neutral_us: 1580
+  esc_forward_us: 1650
+
+  # steering angles
+  neutral_angle: 100
+  steering_min: 50
+  steering_max: 140
